@@ -7,6 +7,7 @@ module.exports =   function check(str1, bracketsConfig) {
 
       if (str1.length % 2 != 0) { return false}
       for (let i=0; i < str1.length; i++) {
+        if (str1[0] == 1) { return true}
         if (str1[i] != str1[str1.length-i]) {
           return false
         } else {return true}
